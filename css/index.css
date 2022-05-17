@@ -1,0 +1,470 @@
+/*PÁGINA: INICIAL*/
+
+/*Deixa toda a página centralizada. Sem bordas brancas ao lado.*/
+*{
+	padding:0;
+	margin:0 auto;
+}
+
+/*Importação da fonte Varela Round*/
+/*Fonte do Header*/
+@font-face{
+    font-family: 'VarelaRound-Regular';
+    src: url(../fonts/VarelaRound-Regular.ttf);
+}
+
+/*Importação da fonte Roboto*/
+/*Fonte dos textos corridos*/
+@font-face{
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+
+header{
+    width: 100vw;
+
+    background-image: url(../img/Header.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 167px;
+}
+
+
+.container{
+    width: 100%;
+}
+
+.container nav{
+    margin-right: 15%;
+    font-size: 1.2em;
+    font-family: 'VarelaRound-Regular';
+}
+
+#linkHeaderProduto:hover{
+    position: relative;
+    top:-2px;
+}
+
+#linkHeaderSobreNos:hover{
+    position: relative;
+    top:-2px;
+}
+
+ 
+/* Logo canto superior esquerdo*/
+.logo_superior_esquerdo
+{
+    float: left;
+    margin-top: 1%;
+    margin-left: 15%; 
+}
+
+
+
+/* links de navegacao da pagina */
+nav{
+    color: rgb(187, 187, 187); /* muda a cor da fonte? */
+    font-size: 12px;
+    float: right;
+    margin-top: 50px;
+}
+
+nav a{
+    color: rgb(187, 187, 187); 
+    text-decoration: none; /*tira o underline do link */
+    
+}
+
+
+nav a.btn_destaque{
+    margin-left: 25px;
+}
+
+.btn_destaque{
+    background-color: #FFF81A; 
+    color:black;
+    padding: 12px 40px; /* margem interna do botao sup dir inf esq. somente um ele muda todos */
+    border-radius: 3px; /* arredonda as bordas */
+    
+    font-size: 1em;
+    text-decoration: none; 
+    
+}
+
+/* Logo do main*/
+.logoe_nome_main{
+    float: left;
+    margin-left: 70px;
+}
+
+/* Sobre a empresa */
+.titulosobre{
+    font-size: 1.5em;
+    font-family: 'VarelaRound-Regular';
+}
+
+.conteudosobre{
+    max-width: 700px;
+    float: left;
+    margin-left: 30px;
+    font-size: 1em;
+}
+
+.textosobreempresa{
+    text-align: justify;
+    float: right;
+    margin-top: 10px;
+    font-family: 'Roboto-Regular';
+    line-height: 1.4;
+    font-size: 1em;
+}
+
+.sobreaempresa1{
+    width: 100vw;
+    
+    margin-top: 5%;
+    
+    /*Estas propriedades fazem com que a div se fique centralizada*/
+    display: flex;
+    flex-direction: row; /*Os elementos desta div ficarão alinhados em linha,
+    ou seja, um ao lado do outro, por isso a imagem está ao lado do texto.*/
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Aqui começam as imagens MISSÃO, VALORES E VISÃO */
+
+.valorMissaoVisao{
+    height: 400px;
+    width: 100vw;
+
+    margin-top: 350px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.missao{
+
+    /*Estas propriedades fazem com que a div se fique centralizada*/
+    display: flex;
+    flex-direction: column;/*Neste caso os elementos dentro da div missão
+    ficarão alinhados em coluna, ou seja, um em baixo do outro por isso o
+    titulo está abaixo da imagem e o texto está abaixo do titulo*/
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto-Regular';
+    line-height: 1.75; 
+
+    width: auto;
+    height: 800px;
+  
+}   
+
+/* COMEÇO MISSÃO */
+
+ .tituloMissao{
+    margin-bottom: 40px;
+    text-align: justify;
+    max-width: 250px;
+    font-size: 2em;
+
+ }
+
+ .conteudoMissao{
+    height: 100%;
+    text-align: justify;
+    max-width: 350px;
+    font-size: 1em;
+ } 
+ /* FIM MISSÃO */
+
+
+
+/* COMEÇO VALORES */
+.valores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto-Regular';
+
+    text-align: center;
+    width: auto;
+    height: 800px;
+}
+
+
+
+ .tituloStar{
+    margin-bottom: 50px;
+    text-align: justify;
+    max-width: 250px;
+    font-size: 2em;
+ }
+
+ .conteudoStar{
+    height: 100%;
+    text-align: justify;
+    line-height: 1.75;
+    
+    max-width: 350px;
+    font-size: 1em;
+ }
+/* FIM VALORES */
+
+
+/* COMEÇO VISÃO */
+
+.visao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto-Regular';
+
+    width: auto;
+    height: 800px;
+}
+
+ .tituloSearch{
+    text-align: justify;
+    max-width: 250px;
+    font-size: 2em;
+    margin-bottom: 50px;
+ }
+
+ .conteudoSearch{
+    text-align: justify;
+    line-height: 1.75;
+    max-width: 350px;
+    font-size: 1em;
+    height: 100%;
+ }
+ /* FIM VISÃO */
+
+ /*Barra azul*/
+.barraAzul{
+    background-color: #6A5ACD;
+    height:auto;
+    width: 100vw;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.equipe{
+    margin-bottom: 25px;
+    color: white;
+    font-family: 'VarelaRound-Regular';
+    font-size: 2.5em;
+
+}
+.nomes{
+    color: white;
+    font-family: 'Roboto-Regular';
+    font-size: 1.2em;
+}
+
+
+/*Foto borrada*/
+.imagemCaoHumano{
+    height: 400px;
+}
+
+.imagemCaoHumano div{
+    position: relative;
+}
+
+.imagemCaoHumano img{
+    position: absolute;
+    width: 100vw;
+    height: 400px;
+}
+
+/* "PET FELIZ" */
+.textonafoto{
+    /*a posição está absoluta para que o texto 
+    fique em cima da imagem*/
+    position: absolute;
+    color:white;
+    font-size: 3em;
+    font-family: 'VarelaRound-Regular';
+
+    text-align: center;
+    width: 100vw;
+    padding-top: 170px;
+}
+
+/*Barra amarela*/
+.barraAmarela{
+    background-color: #FFF81A;
+    height:300px;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixaInterna{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Texto na barra amarela*/
+.textoBarraAmarela{
+    margin-left: 25px;
+    font-size: 1.2em;
+    font-family: 'Roboto-Regular';
+    line-height: 1.25;
+}
+
+
+.sobreProduto-disponivelAndroid{
+    width: 100vw;
+    margin-top: 90px;
+}
+
+.sobreProduto-caixaInterna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 700px;
+}
+
+
+.textoDogWalker{
+    text-align: center;
+    font-size: 1.3em;
+    font-family: arial;
+
+    margin-bottom: 70px;
+}
+
+.fotoDogWalker{
+    margin-bottom: 180px;
+}
+
+/*Foto e texto Android*/
+.textoAndroid{
+    text-align: center;
+    font-size: 1.7em;
+    font-family: 'Roboto-Regular';
+    margin-bottom: 25px;
+}
+
+footer{
+    background-image: url(../img/footer.png);
+    background-size: 100vw 500px;
+    height: 500px;
+    width: 100vw;
+}
+
+/*As caixas internas que aparecem são para que
+todo o conteúdo se alinhe da págima, sem elas não daria
+certo.*/
+.caixaInternaFooter{
+    padding-top: 100px;
+    height:400px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Aqui começa o FOOTER*/
+
+/*"Contatos"*/
+
+.contatos{
+    font-family: 'Roboto-Regular';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    width: 500px;
+    height: 350px;
+}
+
+.textoContato{
+    color: white;
+    font-size: 1.8em;
+}
+
+/*Linha do meio FOOTER*/
+.linhaFooter{
+    background-color: white;
+    width: 2px;
+    height: 300px;
+}
+
+
+/*Coloquei o Endereço de E-mail em uma DIV separada para centralizar-lo*/
+.centralizarEmail{
+    color: white;
+    font-size: 1.5em;
+}
+
+/*Barra azul*/
+.redesSociais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 80px;
+}
+
+.linkTwitter{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.imagemLogoFooter{
+    margin-bottom: 15px;
+}
+
+.navegacaoFooter{
+    font-family: 'Roboto-Regular';
+    text-align: center;
+    font-size: 1.4em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 500px;
+    height: 350px;
+}
+
+.navegacaoFooter a{
+    color: white;
+    text-decoration: none; 
+}
+
+/*Ao passar o mouse em cima do link, aparecerá uma linha debaixo do texto*/
+.navegacaoFooter a:hover{
+    text-decoration: underline;
+}
+
